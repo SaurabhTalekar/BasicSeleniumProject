@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./register.css">
+</head>
+<body>
+    <!-- /* From Uiverse.io by mi-series */  -->
+<section class="container">
+  <header>Registration Form</header>
+  <form class="form" action="#">
+      <div class="input-box">
+          <label>Full Name</label>
+          <input id="name" name="name-text" placeholder="Enter your Full Name" type="text">
+      </div>
+      <div class="column">
+          <div class="input-box">
+            <label>Phone Number</label>
+            <input  id="phone" name="phone-text" placeholder="Enter your Phone Number" type="telephone">
+          </div>
+          <div class="input-box">
+            <label>Birth Date</label>
+            <input  id="dateofbirth" name="date-of-birth" placeholder="Enter birth date" type="date">
+          </div>
+      </div>
+      <div class="column">
+        <div class="input-box">
+          <label>Email</label>
+          <input  id="email" name="emailtext" placeholder="Enter Email Address" type="email">
+        </div>
+        <div class="input-box">
+          <label>Password</label>
+          <input id="password" name="password-text"placeholder="Enter password" type="password">
+        </div>
+    </div>
+      <div class="gender-box">
+        <label>Gender</label>
+        <div class="gender-option">
+          <div class="gender">
+            <input checked="" name="gender" id="check-male" type="radio">
+            <label for="check-male">Male</label>
+          </div>
+          <div class="gender">
+            <input name="gender" id="check-female" type="radio">
+            <label for="check-female">Female</label>
+          </div>
+          <div class="gender">
+            <input name="gender" id="check-other" type="radio">
+            <label for="check-other">Prefer not to say</label>
+          </div>
+        </div>
+      </div>
+      <div class="gender-box">
+        <label>Place</label>
+        <div class="gender-option">
+          <div class="gender">
+            <input checked="" name="gender" id="check-Bangalore" type="checkbox">
+            <label for="check-Bangalore">Bangalore</label>
+          </div>
+          <div class="gender">
+            <input name="gender" id="check-Hyderabad" type="checkbox">
+            <label for="check-Hyderabad">Hyderabad</label>
+          </div>
+          <div class="gender">
+            <input name="gender" id="check-Kerala" type="checkbox" disabled>
+            <label for="check-Kerala">Kerala</label>
+          </div>
+        </div>
+      </div>
+      <div class="input-box address">
+        <label>Address</label>
+        <input required="" placeholder="Enter street address" type="text" disabled id="add">
+        <div class="column">
+          <div class="select-box">
+            <select name="country1">
+                <option value="ind">INDIA</option>
+                <option value="aus">AUSTRALIA</option>
+                <option value="usa">USA</option>
+                <option value="cnd">CANADA</option>
+                <option value="swiss">SWITZERLAND</option>
+              </select>
+          </div>
+          <div class="select-box" style="height: 100px;">
+          <select name="country2" multiple >
+            <option value="ind">INDIA</option>
+            <option value="aus">AUSTRALIA</option>
+            <option value="usa">USA</option>
+            <option value="cnd">CANADA</option>
+            <option value="swiss">SWITZERLAND</option>
+          </select>
+          </div>
+        <!-- <input required="" placeholder="Enter your city" type="text"> -->
+        </div>
+        <br>
+        <div>
+            <label for="">Upload your id </label>
+            <input type="file" name="upload-file" id="Upload" style="width: 250px;">
+        </div>
+      </div>
+      <button>Submit</button>
+      <button><a href="./login.html" style="text-decoration: none; color: black;">open login page</a></button>
+      <iframe src="./linkpage.html" frameborder="0" name="frame1" style=" height: 50px;width: 500px;"></iframe>
+      <div style="text-align: center; cursor: pointer;" id="alert">i am a alert msg</div>
+    </form>
+</section>
+<script>
+    let alert1=document.getElementById("alert")
+    alert1.onclick=()=>{
+        window.prompt("i am a register page alert box")
+    }
+</script>
+</body>
+</html>
